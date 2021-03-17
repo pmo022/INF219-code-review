@@ -3,3 +3,6 @@ Project demonstrating a branch/merge through a pull request in which we do code 
 The purpose of the purpose is simply demonstrating the benefits of code review
 
 There are many very good guides for git basics, e.g. http://atlassian.com/git/tutorials/
+
+
+To run this project, write `pip install flask` to install flask then `flask run` to run the server

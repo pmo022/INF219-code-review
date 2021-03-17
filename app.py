@@ -9,6 +9,7 @@ def index():
     webpage = \
         stylesheet + \
         header() + \
+        kalkulator() + \
         body() + \
         footer() 
     return webpage
@@ -31,6 +32,15 @@ def header():
         <br/>
         <hr/>
     '''
+    
+def kalkulator():
+    w = 100000
+    r = 0.10
+
+    return '<h2>Hvis du tjener ' + str(w) + \
+        ' må du betale ' + str(w * r) + ' i skatt' + \
+        ' og sitter igjen med ' + str(w - w*r) + '.</h2>'
+
 
 
 def body():
@@ -80,6 +90,7 @@ stylesheet = '''
     <style>
         body {
             font-size: 24px;
+            padding: 20px;
         }
 
         footer {
